@@ -2,7 +2,7 @@ import type { CreateToDoPayload, PaginatedResponse, ToDo } from '../store/todo/t
 import api from './axios';
 
 export const todoService = {
-  async getAll(page: number = 1, limit: number = 2): Promise<PaginatedResponse> {
+  async getAll(page: number = 1, limit: number = 10): Promise<PaginatedResponse> {
     const response = await api.get<PaginatedResponse>('/todos/', {
       params: { page, limit },
     });

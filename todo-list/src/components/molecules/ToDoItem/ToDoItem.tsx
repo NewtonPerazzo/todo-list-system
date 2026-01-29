@@ -17,7 +17,7 @@ function ToDoItemComponent({ todo, onEdit, onDelete, onToggleDone, onToggleCance
   const isCanceled = todo.canceled;
 
   return (
-    <div className={`bg-white rounded-lg shadow-md p-4 border border-primary-100 hover:shadow-lg transition-shadow mx-auto w-full ${isCanceled ? 'opacity-60' : ''}`}>
+    <div data-testid={`todo-item-${todo.id}`} className={`bg-white rounded-lg shadow-md p-4 border border-primary-100 hover:shadow-lg transition-shadow mx-auto w-full ${isCanceled ? 'opacity-60' : ''}`}>
       <div className="flex flex-col gap-2 xs:gap-3">
         {/* Header with checkbox, name and canceled badge */}
         <div className="flex items-start gap-2 xs:gap-3">
