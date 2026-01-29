@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Frontend
+todo-list/node_modules/
+todo-list/dist/
+todo-list/.env
+
+# Backend
+todo-list-api/venv/
+todo-list-api/__pycache__/
+todo-list-api/**/__pycache__/
+todo-list-api/*.pyc
+todo-list-api/.env
